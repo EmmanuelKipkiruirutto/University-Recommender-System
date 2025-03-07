@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMatch Kenya - University Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/frontend/images/logo.png"
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">UniMatch Kenya</div>
+        <div class="nav-menu">
+            <a href="dashboard.html" class="nav-link">Home</a>
+            <a href="search.html" class="nav-link">Search</a>
+            <a href="favourites.html" class="nav-link">Favorites</a>
+            <button id="logoutBtn" class="nav-link logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading university details...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="university-details-container">
+        <!-- University Header -->
+        <header class="university-header">
+            <div class="university-header-content">
+                <h1 id="universityName">University Name</h1>
+                <div class="university-meta">
+                    <span id="location"><i class="fas fa-map-marker-alt"></i> Location</span>
+                    <span id="established"><i class="fas fa-calendar-alt"></i> Est. Year</span>
+                   
+                </div>
+            </div>
+        </header>
+
+        <!-- University Content -->
+        <div class="university-content">
+            <!-- Quick Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Student Population</h3>
+                    <p id="studentCount">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Programs Offered</h3>
+                    <p id="programCount">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Average Tuition</h3>
+                    <p id="tuition">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Ranking</h3>
+                    <p id="ranking">Loading...</p>
+                </div>
+            </div>
+
+            <!-- Detailed Information -->
+            <div class="info-grid">
+                <!-- About Section -->
+                <section class="info-section">
+                    <h2>About University</h2>
+                    <p id="universityDescription">Loading...</p>
+                </section>
+
+                <!-- Programs Section -->
+                <section class="info-section">
+                    <h2>Popular Programs</h2>
+                    <div id="programsList" class="programs-list">
+                        <!-- Programs will be inserted here -->
+                    </div>
+                </section>
+
+                <!-- Facilities Section -->
+                <section class="info-section">
+                    <h2>Facilities & Amenities</h2>
+                    <div id="facilitiesList" class="facilities-list">
+                        <!-- Facilities will be inserted here -->
+                    </div>
+                </section>
+
+                <!-- Contact Information -->
+                <section class="info-section">
+                    <h2>Contact Information</h2>
+                    <div id="contactInfo" class="contact-info">
+                        <!-- Contact details will be inserted here -->
+                    </div>
+                </section>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="university-details.js"></script>
+</body>
+</html>

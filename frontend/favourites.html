@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMatch Kenya - Favorite Universities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/frontend/images/logo.png"
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">UniMatch Kenya</div>
+        <div class="nav-menu">
+            <a href="dashboard.html" class="nav-link">Home</a>
+            <a href="search.html" class="nav-link">Search</a>
+            <a href="favourites.html" class="nav-link active">Favorites</a>
+            <button id="logoutBtn" class="nav-link logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="favourites-container">
+        <!-- Header Section -->
+        <header class="favourites-header">
+            <div class="header-content">
+                <h1><i class="fas fa-heart"></i> My Favorite Universities</h1>
+                <p>Manage your saved universities and compare them easily</p>
+            </div>
+        </header>
+
+        <!-- Loading State -->
+        <div id="loadingOverlay" class="loading-overlay">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p>Loading your favorites...</p>
+            </div>
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="empty-state hidden">
+            <div class="empty-state-content">
+                <i class="fas fa-heart-broken"></i>
+                <h2>No Favorites Yet</h2>
+                <p>You haven't added any universities to your favorites list.</p>
+                <a href="search.html" class="search-link-btn">
+                    <i class="fas fa-search"></i> Search Universities
+                </a>
+            </div>
+        </div>
+
+        <!-- Favorites Grid -->
+        <div id="favouritesGrid" class="favourites-grid hidden">
+            <!-- Favorites will be dynamically inserted here -->
+        </div>
+
+      
+        
+    </div>
+
+    <script src="favourites.js"></script>
+</body>
+</html>

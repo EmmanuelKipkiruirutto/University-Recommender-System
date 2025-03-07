@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMatch Kenya - Search Universities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="/frontend/images/logo.png"
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">UniMatch Kenya</div>
+        <div class="nav-menu">
+            <a href="dashboard.html" class="nav-link">Home</a>
+            <a href="favourites.html" class="nav-link">Favorites</a>
+            <button id="logoutBtn" class="nav-link logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="search-container">
+        <div class="search-box">
+            <h2>Describe Your Ideal University</h2>
+            <p>Tell us what you're looking for in a university, and we'll find the best matches for you.</p>
+            
+            <form id="searchForm" class="search-form">
+                <textarea 
+                    placeholder="Example: I'm looking for a university with strong engineering programs, modern facilities, affordable tuition, and good internship opportunities. I prefer a location near city with a diverse student body and active campus life..."
+                    rows="6"
+                    required
+                ></textarea>
+                <button type="submit" class="search-submit-btn">
+                    <i class="fas fa-search"></i> Find Universities
+                </button>
+            </form>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loadingOverlay" class="loading-overlay hidden">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p>Finding your perfect university matches...</p>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultsSection" class="results-section hidden">
+            <h3>Your University Matches</h3>
+            <p class="results-info">Based on your preferences, here are your top matches:</p>
+            
+            <div id="universityCards" class="university-cards">
+                <!-- University cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="search.js"></script>
+</body>
+</html>

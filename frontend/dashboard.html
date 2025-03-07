@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMatch Kenya - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/frontend/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-brand">UniMatch Kenya</div>
+            <div class="nav-menu">
+                <a href="dashboard.html" class="nav-link active">Home</a>
+                <a href="favourites.html" class="nav-link">Favorites</a>
+                <button id="logoutBtn" class="nav-link logout-btn">Logout</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <div class="welcome-section">
+                <h1>Welcome to UniMatch Kenya</h1>
+                <p>Find your perfect university match in Kenya based on your preferences</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Smart Matching</h3>
+                    <p>Get personalized university recommendations based on your preferences</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>AI-Powered</h3>
+                    <p>Advanced AI technology to ensure the best possible matches</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Save Favorites</h3>
+                    <p>Keep track of universities you're interested in</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Detailed Info</h3>
+                    <p>Access comprehensive information about each university</p>
+                </div>
+            </div>
+
+            <div class="search-section">
+                <h2>Ready to find your perfect university?</h2>
+                <p>Click below to start your search journey</p>
+                <a href="search.html" class="search-btn">Search Universities</a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3>About UniMatch</h3>
+                        <p class="about-text">UniMatch Kenya is your intelligent university matching system that helps students find their perfect university match based on their preferences, academic performance, and career goals.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="search.html"><i class="fas fa-search"></i> Search Universities</a></li>
+                            <li><a href="favourites.html"><i class="fas fa-heart"></i> Favorites</a></li>
+                            <li><a href="university-details.html"><i class="fas fa-university"></i> Universities</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><a href="mailto:infounimatch1@gmail.com"><i class="fa-solid fa-envelope"></i> infounimatch1@gmail.com</a></li>
+                            <li><a href="tel:+254798595286"><i class="fa-solid fa-phone"></i> +254798595286</a></li>
+                            <li><a href="https://x.com/UniMatch1" target="_blank"><i class="fa-brands fa-x-twitter"></i> @UniMatch1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 UniMatch Kenya. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
